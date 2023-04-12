@@ -49,10 +49,10 @@ func readViperConfig(appName string) *viper.Viper {
 	v.AutomaticEnv()
 
 	// global defaults
-	
+
 	v.SetDefault("json_logs", false)
 	v.SetDefault("loglevel", "debug")
-	
+	v.SetDefault("listen_address", ":8000")
 
 	return v
 }
